@@ -1,1 +1,1 @@
-### Design web developmemt for Rohat Soluctions LLC.
+### Designing web app developmemt for Rohat Solutions LLC.
