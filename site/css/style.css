@@ -8844,3 +8844,7 @@ html.rd-navbar-fixed-linked .page {
 .labelApply sup{
 	color: red;
 }
+.responsive {
+  width: 100%;
+  height: auto;
+}
