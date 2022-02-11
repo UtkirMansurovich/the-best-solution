@@ -8788,3 +8788,41 @@ html.rd-navbar-fixed-linked .page {
 	top: 24%;
 	left: 19.5%;
 }
+/*jobsFound*/
+.jobsFoundText{
+	width: 60%;
+}
+.jobsFoundButton{
+	width: 250px;
+	height: 100%;
+	margin: 0 5% 0 0;
+}
+@media (max-width: 768px) {
+	.jobsFound{
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-self: center;
+	}
+	.jobsFoundText{
+		width: 100%;
+	}
+	.jobsFoundButton{
+		margin: 5% 0 0 0;
+	}
+}
+/*jobsFoundOne*/
+.detail-para{
+	background-color: #e6e7e8;
+	margin: 0 0 48px 0;
+}
+.tdFirst{
+	color:#414042;
+	font-weight: 800;
+	font-size: 16px;
+}
+.tdSecond{
+	color:#414045;
+	font-size: 16px;
+	padding: 0 0 0 25px;
+}
