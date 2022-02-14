@@ -8848,3 +8848,31 @@ html.rd-navbar-fixed-linked .page {
   width: 100%;
   height: auto;
 }
+/*page jobFound*/
+.jobsFound-header{
+	background: url("../images/1.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.jobsFound-header-child{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 70vh;
+}
+@media (max-width:991px) {
+	.jobsFound-header-child{
+		min-height: 40vh;
+	}
+}
+.headTextJobFound{
+	font-weight: bold;
+	color: #fff;
+	margin-top: 12%;
+	text-align: center;
+}
+.headTextJobFound:last-child{
+	margin-top: 2%;
+}

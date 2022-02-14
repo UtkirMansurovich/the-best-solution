@@ -21,7 +21,8 @@
         </div>
         <p><img class="brand-logo-blue" src="images/logo_2.png" alt="" width="100" height="17"/></p>
     </div>
-</div><!-- <a class="section section-banner d-none d-xl-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank" style="background-image: url(images/background-02-1920x60.jpg); background-image: -webkit-image-set( url(images/background-02-1920x60.jpg) 1x, url(images/background-02-3840x120.jpg) 2x )"><img src="images/foreground-02-1600x60.png" srcset="images/foreground-02-1600x60.png 1x, images/foreground-02-3200x120.png 2x" alt="" width="1600" height="310"></a> -->
+</div>
+<!-- <a class="section section-banner d-none d-xl-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank" style="background-image: url(images/background-02-1920x60.jpg); background-image: -webkit-image-set( url(images/background-02-1920x60.jpg) 1x, url(images/background-02-3840x120.jpg) 2x )"><img src="images/foreground-02-1600x60.png" srcset="images/foreground-02-1600x60.png 1x, images/foreground-02-3200x120.png 2x" alt="" width="1600" height="310"></a> -->
 <div class="page">
     <header class="section page-header">
         <!--RD Navbar-->
@@ -84,7 +85,7 @@
                                         <a class="rd-nav-link" href="about.html">About</a>
                                     </li>
                                     <li class="rd-nav-item">
-                                        <a class="rd-nav-link" href="#home-service">Services</a>
+                                        <a class="rd-nav-link" href="index.html#home-service">Services</a>
                                     </li>
                                     <li class="rd-nav-item">
                                         <a class="rd-nav-link" href="typography.html">Careers</a>
@@ -105,8 +106,12 @@
     </header>
 
     <!--Main section-->
-
-    <img src="images/1.jpg" alt="Nature" class="responsive"> 
+    <div class="jobsFound-header">
+        <div class="container jobsFound-header-child">
+            <h1 class="headTextJobFound">We Are Looking For Talented Resources</h1>
+            <p class="headTextJobFound">We can help you build an exceptional career.</p>
+        </div>
+    </div>
 
     <!-- <section class="section main-section parallax-scene-js" style="background:url('https://livedemo00.template-help.com/wt_52524/images/single-service-1-770x414.jpg') no-repeat center center; background-size:cover;">
         <div class="container">
@@ -350,7 +355,7 @@ Third-party tool integrations with vanilla JS.</p>
                     <ul class="footer-classic-nav-list">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About us</a></li>
-                        <li><a href="#home-service">Services</a></li>
+                        <li><a href="index.html#home-service">Services</a></li>
                         <li><a href="typography.html">Careers</a></li>
                         <li><a href="contacts.html">Contact us</a></li>
                     </ul>
@@ -387,5 +392,25 @@ Third-party tool integrations with vanilla JS.</p>
 <script src="js/core.min.js"></script>
 <script src="js/script.js"></script>
 <!--coded by Drel-->
+<script type="text/javascript">
+    $(function (){
+        $(".card-body a").on('click', function(){
+            $("html, body").animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 4000);
+        });
+        if(window.location.hash) {
+            scroll(0,0);
+            setTimeout(function (){
+                scroll(0,0)
+            }, 1);
+        }
+        if(window.location.hash) {
+            $("html, body").animate({
+                scrollTop: $(window.location.hash).offset().top + 'px'
+            }, 4000);
+        }
+    })
+</script>
 </body>
 </html>
