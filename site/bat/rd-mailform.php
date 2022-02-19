@@ -8,7 +8,7 @@ date_default_timezone_set('Etc/UTC');
 try {
     require './phpmailer/PHPMailerAutoload.php';
 
-    $recipients = $formConfig['info@rohatsolutions.com'];
+    $recipients = $formConfig['email'];
 
     preg_match_all("/([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)/", $recipients, $addresses, PREG_OFFSET_CAPTURE);
 
@@ -102,7 +102,7 @@ try {
         $mail->Host = $formConfig['host'];
 
         // Set the SMTP port number - likely to be 25, 465 or 587
-        $mail->Port = $formConfig['port'];
+        $mail->Port = $formConfig['465'];
 
         // Whether to use SMTP authentication
         $mail->SMTPAuth = true;
@@ -115,7 +115,7 @@ try {
         $mail->Password = $formConfig['password'];
     }
 
-    $mail->From = $_POST['email'];
+    $mail->From = $_POST['info@rohatsolutionsllc.com'];
 
     # Attach file
     if (isset($_FILES['file']) &&

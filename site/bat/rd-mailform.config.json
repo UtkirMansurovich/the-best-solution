@@ -1,8 +1,8 @@
 {
-  "useSmtp": false,
+  "useSmtp": true,
   "host": "stmp.gmail.com",
   "port": 465,
-  "username": "demo@gmail.com",
-  "password": "demopassword",
-  "recipientEmail": "demo@gmail.com"
+  "username": "info@rohatsolutionsllc.com",
+  "password": "Rohat1991@",
+  "recipientEmail": "info@rohatsolutionsllc.com"
 }
